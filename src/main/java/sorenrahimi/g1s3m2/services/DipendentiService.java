@@ -1,7 +1,6 @@
 package sorenrahimi.g1s3m2.services;
 
-//import com.cloudinary.Cloudinary;
-//import com.cloudinary.utils.ObjectUtils;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -36,6 +35,7 @@ public class DipendentiService {
         newDipendente.setNome(body.nome());
         newDipendente.setEmail(body.email());
         newDipendente.setCognome(body.cognome());
+        newDipendente.setPassword(body.password());
         return dipendentiRepository.save(newDipendente);
     }
 

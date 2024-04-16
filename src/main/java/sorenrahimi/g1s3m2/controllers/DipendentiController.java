@@ -21,6 +21,8 @@ public class DipendentiController {
     @Autowired
     private DipendentiService dipendentiService;
 
+
+
     @GetMapping
     public Page<Dipendente> getDipendenti(@RequestParam(defaultValue = "0") int page,
                                    @RequestParam(defaultValue = "10") int size,
